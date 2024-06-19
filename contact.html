@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para responsividade -->
+    <title>Clínica Veterinária</title> <!-- Título da página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Importação da biblioteca Font Awesome para ícones -->
+    <link rel="stylesheet" href="styles.css"> <!-- Importação do arquivo CSS local -->
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/014/492/063/small_2x/dog-and-cat-paws-with-sharp-claws-cute-animal-footprints-png.png" alt="logotipo"> <!-- Imagem do logotipo da clínica -->
+        <h1>Clínica Veterinária Amigo Animal</h1> <!-- Título principal da página -->
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menu de Navegação</h2> <!-- Título da barra lateral -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li> <!-- Links para outras páginas -->
+                <li><a href="about.html">Sobre a clínica</a></li>
+                <li><a href="time.html">Horário de Atendimento</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="contato">
+                <h2>Entre em Contato</h2> <!-- Título da seção de contato -->
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3> <!-- Título das informações de contato -->
+                    <p><strong>Telefones:</strong><br>
+                        Celular: (00) 98765-4321<br> <!-- Informação de telefone celular -->
+                        WhatsApp: (00) 98765-4321</p> <!-- Informação de WhatsApp -->
+                    <p><strong>Endereço:</strong><br>
+                        Av. Principal, 123 - Bairro Centro<br> <!-- Informação de endereço -->
+                        Cidade - Estado</p> <!-- Informação de cidade e estado -->
+                    
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-46.000000!3d-23.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUzJzMzLjkiUyA0NsKwMzAnMjMuMyJX!5e0!3m2!1spt-BR!2sbr!4v1623968710794!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"></iframe> <!-- Mapa incorporado do Google Maps -->
+                    </div>
+                </div>
+
+                <form action="#" method="POST" class="contact-form"> <!-- Formulário de contato -->
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome -->
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required> <!-- Campo de entrada para o e-mail -->
+                    
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required> <!-- Campo de entrada para o assunto -->
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea> <!-- Área de texto para a mensagem -->
+                    
+                    <div class="button-group">
+                        <button type="submit">Enviar Mensagem</button> <!-- Botão para enviar o formulário -->
+                        <button type="reset">Limpar Formulário</button> <!-- Botão para limpar o formulário -->
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="social-button"><i class="fab fa-facebook-f"></i></a> <!-- Ícone de Facebook -->
+            <a href="https://www.instagram.com" target="_blank" class="social-button"><i class="fab fa-instagram"></i></a> <!-- Ícone de Instagram -->
+            <a href="https://wa.me/1234567890" target="_blank" class="social-button"><i class="fab fa-whatsapp"></i></a> <!-- Ícone de WhatsApp -->
+            <a href="https://maps.google.com" target="_blank" class="social-button"><i class="fas fa-map-marker-alt"></i></a> <!-- Ícone de Mapa -->
+        </div>
+        <p>&copy; 2024 Clínica Veterinária Amigo Animal. Todos os direitos reservados. - By LogattoDev</p> <!-- Direitos autorais -->
+    </footer>
+</body>
+</html>

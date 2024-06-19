@@ -1,0 +1,331 @@
+/* Estilos globais */
+
+/* Define margem zero e fonte para o corpo do documento */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Estilos do cabeçalho */
+
+/* Fundo e cores do cabeçalho */
+header {
+    background-color: #4caf4fb0;
+    color: rgb(121, 109, 2);
+    padding: 1em 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Estilos do título no cabeçalho */
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Estilos do logotipo no cabeçalho */
+header .logo {
+    left: 400px;
+    opacity: 80%;
+    height: 50px;
+    margin-right: 2%;
+}
+
+
+/* Estilos do contêiner principal */
+
+/* Exibe como flex container e ajusta altura */
+.container {
+    display: flex;
+    height: calc(100vh - 140px);
+}
+
+
+/* Estilos da barra lateral */
+
+/* Largura, fundo e espaçamento interno da barra lateral */
+.sidebar {
+    width: 200px;
+    background-color: #f5e8e8;
+    padding: 25px;
+}
+
+/* Estilos do título na barra lateral */
+.sidebar h2 {
+    text-align: center;
+    opacity: 70%;
+}
+
+/* Remove estilo de lista e ajusta espaçamento */
+.sidebar ul {
+    list-style-type: none;
+    padding: 10%;
+    padding-top: 20%;
+}
+
+/* Estilos dos itens da lista na barra lateral */
+.sidebar ul li {
+    margin-bottom: 40px;
+}
+
+/* Estilos dos links na barra lateral */
+.sidebar ul li a {
+    text-decoration: none;
+    color: #045a01;
+    font-size: 18px;
+}
+
+/* Estilo de hover para links na barra lateral */
+.sidebar ul li a:hover {
+    color: #4CAF50;
+}
+
+
+/* Estilos do conteúdo principal */
+
+/* Cresce para ocupar espaço e ajusta overflow */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Estilos das seções dentro de main */
+main section {
+    margin-bottom: 20px;
+}
+
+/* Estilos das imagens destacadas */
+.featured-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+/* Estilos dos serviços */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos de cada serviço */
+.service {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Estilos do ícone de serviço */
+.service i {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Estilos da equipe */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos de cada membro da equipe */
+.team-member {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+}
+
+/* Estilos da imagem de cada membro da equipe */
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Estilos dos depoimentos */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos de cada depoimento */
+.testimonial {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* Estilos do rodapé */
+
+/* Fundo, cores e espaçamento do rodapé */
+footer {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos dos ícones de mídia social no rodapé */
+footer .social-media {
+    margin-bottom: 10px;
+}
+
+/* Estilos dos botões de mídia social no rodapé */
+footer .social-button {
+    color: rgba(255, 255, 255, 0.637);
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Estilo de hover para os botões de mídia social no rodapé */
+footer .social-button:hover {
+    color: #ffffff;
+}
+
+
+/* Estilos específicos para a tabela de horários */
+
+/* Largura, borda e espaçamento da tabela */
+#horario table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cabeçalhos e células da tabela de horários */
+#horario th, #horario td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para cabeçalhos da tabela de horários */
+#horario th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Estilos para células da tabela de horários */
+#horario td {
+    font-size: 16px;
+}
+
+/* Estilos para parágrafos dentro da seção de horário */
+#horario p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+}
+
+
+/* Estilos específicos para o mapa */
+
+/* Largura, altura, margem e borda do mapa */
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilos específicos para o formulário de contato */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título dentro do contêiner de informações de contato */
+.contact-info h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+/* Estilos para parágrafos dentro do contêiner de informações de contato */
+.contact-info p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Estilos para texto forte dentro do contêiner de informações de contato */
+.contact-info p strong {
+    color: #333;
+}
+
+/* Estilos para o formulário de contato */
+.contact-form {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para os rótulos dos campos do formulário de contato */
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para os campos de entrada*/
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos específicos para o campo textarea do formulário de contato */
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Estilos para o grupo de botões no formulário de contato */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para os botões no grupo de botões do formulário de contato */
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Estilos para o estado de hover dos botões no grupo de botões do formulário de contato */
+.button-group button:hover {
+    background-color: #45a049;
+}
